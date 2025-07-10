@@ -46,22 +46,29 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDR-Fq-dtJ">
-                                        <rect key="frame" x="24.000000000000007" y="654" width="126.66666666666669" height="70"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="START">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="33"/>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="22.666666666666686" y="654" width="129.33333333333334" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <color key="tintColor" systemColor="linkColor"/>
+                                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" systemColor="tableCellBlueTextColor"/>
+                                            <color key="titleShadowColor" systemColor="tintColor"/>
+                                        </state>
                                         <connections>
-                                            <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NTZ-J7-8db"/>
+                                            <action selector="getChangeActiveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBi-l1-FOc"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="lDR-Fq-dtJ" firstAttribute="height" secondItem="yWU-1J-8A1" secondAttribute="height" multiplier="0.0965807" id="5TB-oI-YS8"/>
+                                    <constraint firstItem="lDR-Fq-dtJ" firstAttribute="width" secondItem="yWU-1J-8A1" secondAttribute="width" multiplier="0.73855" id="SFL-TP-fdq"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yWU-1J-8A1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AFR-NG-FLv"/>
                             <constraint firstItem="yWU-1J-8A1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="mwl-Ye-iBg"/>
@@ -69,10 +76,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activeButton" destination="yWU-1J-8A1" id="fFG-tm-VuH"/>
+                        <outlet property="activeButton" destination="lDR-Fq-dtJ" id="sn8-4e-dta"/>
                         <outlet property="greenView" destination="PpG-GW-uoD" id="F3P-2I-2jt"/>
                         <outlet property="redView" destination="nRh-zl-UuC" id="iA9-yF-0no"/>
-                        <outlet property="yellowView" destination="P8B-Yk-dMF" id="Bpn-bI-ucn"/>
+                        <outlet property="yellowView" destination="P8B-Yk-dMF" id="HST-tz-YMY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -81,8 +88,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGrayColor">
-            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,6 +99,12 @@
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tableCellBlueTextColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
